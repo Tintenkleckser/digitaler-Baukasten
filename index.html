@@ -13,7 +13,7 @@
             background-color: #f0f0f0; /* Heller Hintergrund */
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start; /* Beginnt oben */
             align-items: center;
             font-family: Arial, sans-serif; /* Einfache Schriftart */
         }
@@ -26,15 +26,18 @@
 
         iframe {
             width: 80%;
-            height: 70%; /* Höhe des iFrames auf 70% gesetzt */
+            flex-grow: 1; /* Lässt das iframe den verbleibenden Platz einnehmen */
             border: none;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Leichter Schatten für das iFrame */
         }
 
         /* Optional: Stil für den Container des Inhalts */
         .content {
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 100%;
+            height: 100%; /* Der gesamte verfügbare Platz wird verwendet */
         }
     </style>
 </head>
