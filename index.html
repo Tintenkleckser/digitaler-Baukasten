@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digitaler Baukasten</title> <!-- Titel der Webseite -->
+    <title>Digitaler Baukasten</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
-            background-color: #f0f0f0; /* Heller Hintergrund */
             display: flex;
             flex-direction: column;
             justify-content: flex-start; /* Beginnt oben */
             align-items: center;
             font-family: Arial, sans-serif; /* Einfache Schriftart */
+            background-image: url('https://raw.githubusercontent.com/Tintenkleckser/digitaler-Baukasten/b94b9554ff0a43e9f7bb37a4ab9b16ec80452a59/baukasten.png');
+            background-size: cover; /* Das Bild füllt den gesamten Hintergrund */
+            background-position: center; /* Zentriert das Bild */
+            background-repeat: no-repeat; /* Verhindert Wiederholung des Bildes */
         }
 
         h1 {
             margin-top: 20px;
             font-size: 2em;
-            color: #333; /* Titel in dunklerer Farbe */
-        }
-
-        .image-container {
-            margin: 20px;
+            color: #fff; /* Titel in weißer Farbe, damit er auf dem Bild sichtbar ist */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Leichter Schatten für besseren Kontrast */
         }
 
         iframe {
@@ -41,7 +41,7 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
-            height: 100%; /* Der gesamte verfügbare Platz wird verwendet */
+            height: 100%;
         }
     </style>
 </head>
@@ -49,16 +49,9 @@
     <div class="content">
         <h1>Digitaler Baukasten</h1> <!-- Seitentitel -->
 
-        <!-- Bild einfügen -->
-        <div class="image-container">
-            <img src="https://raw.githubusercontent.com/Tintenkleckser/digitaler-Baukasten/5bf9213027845321234d149d2bf356383f8a885b/header01.jpg" alt="Digitaler Baukasten" width="300px">
-        </div>
-
         <iframe 
             src="https://www.chatbase.co/chatbot-iframe/uyeoKTkIMDQFk48Ef916b">
         </iframe>
     </div>
 </body>
 </html>
-
-
